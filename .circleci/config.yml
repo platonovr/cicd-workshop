@@ -74,10 +74,10 @@ jobs:
       - setup_remote_docker
       - checkout
       - heroku/push-docker-image:
-          app-name: hello-circleci-connect-dev
+          app-name: hello-circleci-connect-dev-rp
           process-types: web
       - heroku/release-docker-image:
-          app-name: hello-circleci-connect-dev
+          app-name: hello-circleci-connect-dev-rp
           process-types: web
 
 workflows:
